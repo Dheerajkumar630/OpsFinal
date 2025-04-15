@@ -1508,7 +1508,7 @@ def extract_sample_issues(jira_data, sample_size=300):
         "PROJECT_CATEGORY",
         "PLATFORM_OS", 
         "PRODUCT",
-        "Customers"
+        "Customers","Status"
     ]
     
     # Filter to fields that actually exist in the data
