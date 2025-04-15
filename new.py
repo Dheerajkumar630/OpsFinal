@@ -435,7 +435,7 @@ def get_filtered_jira_data_from_nl(query_params=None, limit=500):
     if query_params is None:
         query_params = {
             "filters": {},
-            "relevant_fields": ["ISSUEKEY", "SUMMARY", "ISSUE_TYPE", "PRIORITY", "STATUS", "CREATED", "RESOLVED"]
+            "relevant_fields": ["ISSUEKEY", "SUMMARY", "ISSUE_TYPE", "PRIORITY", "STATUS", "CREATED", "RESOLVED","CUSTOMER","MODULE_FEATURE","PRODUCT,"DUE_DATE","PLATFORM_OS"]
         }
     
     filters = query_params.get("filters", {})
