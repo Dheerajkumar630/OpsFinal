@@ -2413,7 +2413,7 @@ def perform_agentic_analysis_with_filters(user_prompt, api_key):
         
         # 6. Get Claude's analysis
         client = anthropic.Anthropic(api_key=api_key)
-        with st.spinner("Performing analysis with Claude AI..."):
+        with st.spinner("Performing analysis with OpsGenie..."):
             response = client.messages.create(
                 model="claude-3-5-haiku-20241022", 
                 max_tokens=3000,
